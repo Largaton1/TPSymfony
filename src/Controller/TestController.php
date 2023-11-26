@@ -1,8 +1,10 @@
 namespace App\Controller;
+
 class TestController {
-    function index(){
-        var_dump("ca fonctionne");
-        die();
+    #[Route('/first', 'first' )]
+    function index(): Response {
+        return $this->render('first/index.html.twig', ['controller_name' => 'TestController', array
+            ]);
     }
 
 }
